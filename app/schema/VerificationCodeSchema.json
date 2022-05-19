@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {"type": "string", "nullable": false},
+        "code": {"type": "string", "nullable": false},
+        "channel": {"type": "string", "nullable": false},
+        "medium": {"type": "string", "nullable": false},
+        "type": {"type": "string", "nullable": false},
+        "attempts": {"type": "number", "nullable": true},
+        "reference_id": {"type": "number", "format": "int64", "nullable": false},
+        "expires_in": {"type": "object", "format": "date-time", "nullable": false},
+        "created_at": {"type": "object", "format": "date-time", "nullable": true},
+        "updated_at": {"type": "object", "format": "date-time", "nullable": true}
+    },
+    "required": ["id", "code", "channel", "medium", "type", "reference_id", "expires_in"],
+    "additionalProperties": false
+}
